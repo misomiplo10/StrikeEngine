@@ -3,420 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#09080d" />
+    <meta name="theme-color" content="#0a090d" />
     <meta
       name="description"
-      content="VAULTAIL is a Solana meme coin concept whose pool fees fund a transparent, defined-risk options treasury."
+      content="DICKBUTT is a Solana meme coin concept whose pool fees fund a transparent options treasury that trades through Derive."
     />
-    <meta property="og:title" content="VAULTAIL — The meme with a tail plan" />
+    <meta property="og:title" content="DICKBUTT: Solana fees, options on Derive" />
     <meta
       property="og:description"
-      content="Follow every fee, bridge, and treasury move."
+      content="A simple, transparent path from Solana pool fees to defined risk options trades on Derive."
     />
-    <meta property="og:image" content="assets/vaultail-mark.png" />
-    <title>VAULTAIL — The meme with a tail plan</title>
-    <link rel="icon" type="image/png" href="assets/vaultail-mark.png" />
+    <meta property="og:image" content="assets/dickbutt-mark.png" />
+    <title>DICKBUTT: Solana fees, options on Derive</title>
+    <link rel="icon" type="image/png" href="assets/dickbutt-mark.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
-
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="VAULTAIL home">
-        <img src="assets/vaultail-mark.png" alt="" />
-        <span>VAULTAIL</span>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DICKBUTT home">
+        <img src="assets/dickbutt-mark.png" alt="" />
+        <span>DICKBUTT</span>
       </a>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span>
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Open navigation</span>
       </button>
 
-      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-        <a href="#mechanism">Mechanism</a>
-        <a href="#guardrails">Guardrails</a>
-        <a href="#verify">Transparency</a>
-        <a href="#faq">FAQ</a>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#derive">Why Derive</a>
+        <a href="#risk">Risk</a>
       </nav>
 
-      <a class="header-pill" href="#mechanism">Read the blueprint <span aria-hidden="true">↘</span></a>
+      <a class="small-cta" href="#how">See the flow <span>↓</span></a>
     </header>
 
     <main id="top">
-      <section class="hero section-shell">
+      <section class="hero shell">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> Solana-native · treasury-powered</div>
-          <h1>The meme with<br />a <span class="gradient-text">tail plan.</span></h1>
-          <p class="hero-lede">
-            VAULTAIL is a Solana coin concept whose protocol-earned USDC fees fund a
-            transparent, defined-risk options treasury.
+          <div class="eyebrow"><span></span> SOLANA COIN. DERIVE TREASURY.</div>
+          <h1>Memes trade.<br /><em>Fees go to work.</em></h1>
+          <p>
+            DICKBUTT is a Solana meme coin concept. A share of eligible pool fees is collected in
+            USDC and used by a transparent treasury to make options trades through Derive.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#mechanism">Follow the fees <span>↓</span></a>
-            <a class="button button-ghost" href="#verify">See the vault <span>↗</span></a>
+            <a class="button primary" href="#how">How it works <span>↓</span></a>
+            <a class="button secondary" href="https://www.derive.xyz/" target="_blank" rel="noreferrer">Visit Derive <span>↗</span></a>
           </div>
-          <p class="microcopy">No guaranteed returns. Options and crypto can lose value.</p>
+          <small>Concept only. No guaranteed returns. Options and crypto can lose value.</small>
         </div>
 
-        <div class="hero-visual reveal" aria-label="VAULTAIL logo orbiting a transparent treasury flow">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="hero-halo"></div>
-          <img class="hero-mark" src="assets/vaultail-mark.png" alt="VAULTAIL angular tail and vault logo" />
-          <div class="float-chip chip-sol"><span></span> SOLANA</div>
-          <div class="float-chip chip-usdc"><span>$</span> USDC FEES</div>
-          <div class="float-chip chip-risk"><span>⌁</span> CAPPED RISK</div>
-          <div class="curve-card" aria-hidden="true">
-            <span>DEFINED RISK</span>
-            <svg viewBox="0 0 168 62" role="img">
-              <path d="M3 48H165M18 58V5" />
-              <path class="payoff-line" d="M18 48H84L132 12H162" />
-              <circle cx="84" cy="48" r="3.5" />
-            </svg>
+        <div class="hero-card reveal" aria-label="DICKBUTT fee flow overview">
+          <div class="mark-wrap">
+            <img src="assets/dickbutt-mark.png" alt="DICKBUTT geometric logo" />
           </div>
-        </div>
-
-        <div class="hero-specs reveal">
-          <div>
-            <span>HOME CHAIN</span>
-            <strong>Solana</strong>
-          </div>
-          <div>
-            <span>FEE ASSET</span>
-            <strong>USDC</strong>
-          </div>
-          <div>
-            <span>TREASURY</span>
-            <strong>Multisig</strong>
-          </div>
-          <div>
-            <span>STRATEGY</span>
-            <strong>Defined risk</strong>
+          <div class="mini-flow">
+            <div><span>01</span><strong>Trade on Solana</strong></div>
+            <i>↓</i>
+            <div><span>02</span><strong>Collect USDC fees</strong></div>
+            <i>↓</i>
+            <div class="highlight"><span>03</span><strong>Trade options on Derive</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="ticker-band" aria-label="Project principles">
-        <div class="ticker-track">
-          <span>MEME ON SOLANA</span><i>✦</i><span>FEES IN USDC</span><i>✦</i>
-          <span>VISIBLE MONEY MOVEMENT</span><i>✦</i><span>NO TRANSFER TAX</span><i>✦</i>
-          <span>TRADE-ONLY BOT</span><i>✦</i><span>DEFINED-RISK OPTIONS</span><i>✦</i>
-          <span aria-hidden="true">MEME ON SOLANA</span><i aria-hidden="true">✦</i>
-          <span aria-hidden="true">FEES IN USDC</span><i aria-hidden="true">✦</i>
-          <span aria-hidden="true">VISIBLE MONEY MOVEMENT</span><i aria-hidden="true">✦</i>
+      <section class="stack-bar" aria-label="Technology stack">
+        <div class="shell stack-inner">
+          <span>BUILT ACROSS</span>
+          <strong>Solana</strong><i>→</i><strong>Circle CCTP</strong><i>→</i><strong>Ethereum</strong><i>→</i><strong>Derive</strong>
         </div>
       </section>
 
-      <section class="intro section-shell" id="mechanism">
-        <div class="section-kicker reveal">01 / THE MECHANISM</div>
-        <div class="intro-grid">
-          <h2 class="reveal">Meme energy.<br /><span>Treasury discipline.</span></h2>
-          <div class="intro-copy reveal">
-            <p>
-              VAULTAIL separates the meme from the machinery. The token stays a standard SPL
-              asset. A dedicated fee stream fills a treasury that follows a public risk policy.
-            </p>
-            <p>
-              The goal is simple: make the path from a Solana swap to an options position easy
-              to inspect—and hard for a trading key to abuse.
-            </p>
+      <section class="how shell" id="how">
+        <div class="section-intro reveal">
+          <span>HOW IT WORKS</span>
+          <h2>One fee path.<br />Four clear steps.</h2>
+          <p>The token stays on Solana. The options treasury trades through Derive.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-no">01</span>
+            <div class="step-icon solana-icon">S</div>
+            <h3>DICKBUTT trades on Solana</h3>
+            <p>A standard SPL token trades in a pool paired with USDC.</p>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-no">02</span>
+            <div class="step-icon">%</div>
+            <h3>The treasury collects fees</h3>
+            <p>Eligible creator or treasury liquidity fees accrue in USDC. Normal wallet transfers are not taxed.</p>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-no">03</span>
+            <div class="step-icon">⇄</div>
+            <h3>USDC moves to Ethereum</h3>
+            <p>Circle CCTP moves native USDC from Solana to the project treasury on Ethereum.</p>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-no">04</span>
+            <div class="step-icon derive-icon">D</div>
+            <h3>Options trade through Derive</h3>
+            <p>The treasury funds a Derive subaccount. A restricted bot places approved options trades.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="derive-section shell" id="derive">
+        <div class="derive-copy reveal">
+          <div class="derive-label"><span>D</span> OPTIONS EXECUTION: DERIVE</div>
+          <h2>Derive is the trading venue.</h2>
+          <p>
+            DICKBUTT is not Derive and is not affiliated with it. The proposed treasury uses Derive
+            as the infrastructure for its options account, collateral, orders, and positions.
+          </p>
+          <p>
+            The treasury owner keeps control. A separate session key gives the bot permission to
+            trade, but not permission to withdraw or transfer treasury funds.
+          </p>
+          <a href="https://docs.derive.xyz/authentication/contract-owned-accounts" target="_blank" rel="noreferrer">Read Derive account documentation <span>↗</span></a>
+        </div>
+
+        <div class="account-card reveal">
+          <div class="account-head">
+            <span>TREASURY ACCOUNT</span>
+            <i>PROPOSED</i>
           </div>
-        </div>
-
-        <div class="flow-wrap reveal" data-flow>
-          <div class="flow-progress" aria-hidden="true"><span></span></div>
-
-          <article class="flow-step is-active" tabindex="0" data-step="1">
-            <div class="step-number">01</div>
-            <div class="step-icon sol-icon">S</div>
-            <h3>Trade on Solana</h3>
-            <p>$VTAIL trades in a standard SPL market paired with USDC.</p>
-            <span class="step-label">FAST + LOW COST</span>
-          </article>
-
-          <article class="flow-step" tabindex="0" data-step="2">
-            <div class="step-number">02</div>
-            <div class="step-icon fee-icon">%</div>
-            <h3>Collect pool fees</h3>
-            <p>Eligible creator or treasury LP fees accrue without taxing wallet transfers.</p>
-            <span class="step-label">USDC-FIRST</span>
-          </article>
-
-          <article class="flow-step" tabindex="0" data-step="3">
-            <div class="step-number">03</div>
-            <div class="step-icon bridge-icon">⇄</div>
-            <h3>Bridge the treasury</h3>
-            <p>Accumulated USDC moves from Solana to Ethereum through Circle CCTP.</p>
-            <span class="step-label">BURN + MINT</span>
-          </article>
-
-          <article class="flow-step" tabindex="0" data-step="4">
-            <div class="step-number">04</div>
-            <div class="step-icon vault-icon">◇</div>
-            <h3>Fund the vault</h3>
-            <p>A treasury-controlled account receives collateral for approved strategies.</p>
-            <span class="step-label">MULTISIG CONTROL</span>
-          </article>
-
-          <article class="flow-step" tabindex="0" data-step="5">
-            <div class="step-number">05</div>
-            <div class="step-icon option-icon">⌁</div>
-            <h3>Trade with limits</h3>
-            <p>A scoped bot can place approved options trades, but it cannot withdraw funds.</p>
-            <span class="step-label">DEFINED RISK</span>
-          </article>
-        </div>
-
-        <div class="architecture-note reveal">
-          <div class="note-badge">WHY USDC?</div>
-          <p>Collecting the quote asset avoids repeatedly selling $VTAIL to fund the strategy.</p>
-          <svg viewBox="0 0 180 54" aria-hidden="true">
-            <path d="M3 42C28 42 28 15 54 15S80 42 106 42 132 15 177 15" />
-          </svg>
+          <div class="account-row">
+            <span>Owner</span><strong>Project multisig</strong>
+          </div>
+          <div class="account-row">
+            <span>Options venue</span><strong>Derive</strong>
+          </div>
+          <div class="account-row">
+            <span>Trading bot</span><strong class="allowed">Trade only</strong>
+          </div>
+          <div class="account-row">
+            <span>Withdrawals</span><strong class="blocked">Blocked for bot</strong>
+          </div>
+          <div class="account-row">
+            <span>Initial strategy</span><strong>Defined risk</strong>
+          </div>
+          <div class="account-note">The multisig can revoke the bot session key at any time.</div>
         </div>
       </section>
 
-      <section class="layers section-shell">
-        <div class="section-kicker reveal">02 / TWO LAYERS, ONE STORY</div>
-        <div class="layer-grid">
-          <article class="layer-card layer-meme reveal">
-            <div class="layer-top">
-              <span class="layer-index">A</span>
-              <span class="chain-pill">SOLANA</span>
-            </div>
-            <div class="meme-orb">
-              <img src="assets/vaultail-mark.png" alt="" />
-            </div>
-            <h3>The meme layer</h3>
-            <p>Community, culture, liquidity, and a standard token built for broad compatibility.</p>
-            <ul>
-              <li><span>01</span> No transfer tax</li>
-              <li><span>02</span> Paired with USDC</li>
-              <li><span>03</span> Public fee policy</li>
-            </ul>
-          </article>
+      <section class="risk shell" id="risk">
+        <div class="section-intro reveal">
+          <span>KEEP IT BOUNDED</span>
+          <h2>Simple rules for a risky idea.</h2>
+        </div>
 
-          <article class="layer-card layer-vault reveal">
-            <div class="layer-top">
-              <span class="layer-index">B</span>
-              <span class="chain-pill">ETHEREUM</span>
-            </div>
-            <div class="vault-grid" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-              <div class="vault-core">◇</div>
-            </div>
-            <h3>The treasury layer</h3>
-            <p>Cross-chain settlement, multisig custody, and a permission-limited execution bot.</p>
-            <ul>
-              <li><span>01</span> Treasury owns funds</li>
-              <li><span>02</span> Bot trades only</li>
-              <li><span>03</span> Every move verifiable</li>
-            </ul>
+        <div class="rules">
+          <article class="rule reveal">
+            <span>01</span>
+            <h3>Defined risk first</h3>
+            <p>Start with purchased options and capped loss spreads. No naked short options.</p>
+          </article>
+          <article class="rule reveal">
+            <span>02</span>
+            <h3>The bot cannot withdraw</h3>
+            <p>Trading permissions stay separate from treasury ownership and administration.</p>
+          </article>
+          <article class="rule reveal">
+            <span>03</span>
+            <h3>Show the transactions</h3>
+            <p>Publish fee collection, CCTP transfers, Derive deposits, positions, and results after launch.</p>
           </article>
         </div>
-      </section>
 
-      <section class="guardrails section-shell" id="guardrails">
-        <div class="section-kicker reveal">03 / BUILT WITH BOUNDARIES</div>
-        <div class="guardrails-head">
-          <h2 class="reveal">Permission to trade.<br /><span>Never permission to take.</span></h2>
-          <p class="reveal">
-            Automation is useful only when its authority is narrow. VAULTAIL’s proposed design
-            separates ownership, execution, and emergency control.
+        <div class="plain-truth reveal">
+          <strong>Plain truth</strong>
+          <p>
+            Holding $DICKBUTT does not guarantee income, a distribution, a redemption right, or
+            ownership of treasury assets. The treasury can lose money.
           </p>
         </div>
-
-        <div class="permission-console reveal" data-console>
-          <div class="console-head">
-            <div><span class="live-dot"></span> SESSION KEY POLICY</div>
-            <span>PROPOSED CONFIGURATION</span>
-          </div>
-          <div class="permission-list">
-            <div class="permission-row is-allowed">
-              <div class="permission-name"><span>01</span> Place approved option orders</div>
-              <div class="permission-state"><i></i> ALLOWED</div>
-            </div>
-            <div class="permission-row is-allowed">
-              <div class="permission-name"><span>02</span> Cancel open orders</div>
-              <div class="permission-state"><i></i> ALLOWED</div>
-            </div>
-            <div class="permission-row is-denied">
-              <div class="permission-name"><span>03</span> Withdraw treasury assets</div>
-              <div class="permission-state"><i></i> DENIED</div>
-            </div>
-            <div class="permission-row is-denied">
-              <div class="permission-name"><span>04</span> Transfer collateral</div>
-              <div class="permission-state"><i></i> DENIED</div>
-            </div>
-            <div class="permission-row is-denied">
-              <div class="permission-name"><span>05</span> Change account administrators</div>
-              <div class="permission-state"><i></i> DENIED</div>
-            </div>
-          </div>
-          <div class="console-foot">
-            <span>BOUND TO ONE TREASURY SUBACCOUNT</span>
-            <span>EXPIRING + REVOCABLE</span>
-          </div>
-        </div>
-
-        <div class="risk-grid">
-          <article class="risk-card reveal">
-            <span class="risk-no">01</span>
-            <h3>Defined-risk first</h3>
-            <p>Start with purchased options and capped-loss spreads. No naked short options.</p>
-          </article>
-          <article class="risk-card reveal">
-            <span class="risk-no">02</span>
-            <h3>Hard strategy limits</h3>
-            <p>Cap premium, notional, market, expiry, slippage, and loss at the policy layer.</p>
-          </article>
-          <article class="risk-card reveal">
-            <span class="risk-no">03</span>
-            <h3>Emergency controls</h3>
-            <p>The multisig can revoke the bot, pause new trades, and keep withdrawals separate.</p>
-          </article>
-        </div>
       </section>
 
-      <section class="verify section-shell" id="verify">
-        <div class="section-kicker reveal">04 / TRANSPARENT BY DESIGN</div>
-        <div class="verify-grid">
-          <div class="verify-copy reveal">
-            <h2>Don’t trust the tail.<br /><span>Trace it.</span></h2>
-            <p>
-              Once live, the dashboard should connect every fee to its next destination: collection,
-              bridge, deposit, trade, and result.
-            </p>
-            <div class="blueprint-pill"><span></span> BLUEPRINT · NOT YET LIVE</div>
-          </div>
-
-          <div class="ledger reveal">
-            <div class="ledger-head">
-              <span>TREASURY LEDGER</span>
-              <span class="ledger-status"><i></i> AWAITING LAUNCH</span>
-            </div>
-            <div class="ledger-row">
-              <span>Solana treasury</span><strong>Published at launch</strong><button type="button" disabled>↗</button>
-            </div>
-            <div class="ledger-row">
-              <span>Ethereum treasury</span><strong>Published at launch</strong><button type="button" disabled>↗</button>
-            </div>
-            <div class="ledger-row">
-              <span>Fee collection history</span><strong>No live data</strong><button type="button" disabled>↗</button>
-            </div>
-            <div class="ledger-row">
-              <span>Open positions</span><strong>No live data</strong><button type="button" disabled>↗</button>
-            </div>
-            <div class="ledger-row">
-              <span>Current risk policy</span><strong>Draft v0.1</strong><button type="button" data-open-policy>＋</button>
-            </div>
-          </div>
+      <section class="closing shell reveal">
+        <img src="assets/dickbutt-mark.png" alt="" />
+        <div>
+          <span>DICKBUTT</span>
+          <h2>A Solana meme.<br />An options treasury on Derive.</h2>
+          <p>This is a product concept, not a launched token or live trading strategy.</p>
         </div>
-
-        <div class="truth-grid reveal">
-          <div class="truth truth-yes">
-            <span>THIS IS</span>
-            <ul>
-              <li>A Solana meme coin concept</li>
-              <li>A transparent treasury experiment</li>
-              <li>A permission-limited trading system</li>
-            </ul>
-          </div>
-          <div class="truth truth-no">
-            <span>THIS IS NOT</span>
-            <ul>
-              <li>Guaranteed yield</li>
-              <li>Risk-free income</li>
-              <li>A promise that $VTAIL will rise</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq section-shell" id="faq">
-        <div class="section-kicker reveal">05 / STRAIGHT ANSWERS</div>
-        <div class="faq-layout">
-          <h2 class="reveal">Good questions.<br /><span>No smoke.</span></h2>
-          <div class="accordion reveal">
-            <details open>
-              <summary>Does every transfer pay a tax?<span>＋</span></summary>
-              <p>No. The proposed structure uses eligible pool-creator or treasury-owned liquidity fees rather than taxing normal wallet transfers.</p>
-            </details>
-            <details>
-              <summary>Can the trading bot withdraw funds?<span>＋</span></summary>
-              <p>No. Its intended session key can place and cancel approved trades only. Withdrawals remain under multisig control.</p>
-            </details>
-            <details>
-              <summary>Can the treasury lose money?<span>＋</span></summary>
-              <p>Yes. Options can expire worthless, spreads can reach maximum loss, and bridge, stablecoin, liquidity, contract, and operating risks remain.</p>
-            </details>
-            <details>
-              <summary>Do holders own the treasury?<span>＋</span></summary>
-              <p>Not under this concept. Holding $VTAIL does not guarantee a distribution, return, redemption right, or ownership of treasury assets.</p>
-            </details>
-            <details>
-              <summary>Why cross chains at all?<span>＋</span></summary>
-              <p>Solana hosts the token and fee activity. Ethereum hosts the proposed options-account custody path. CCTP moves native USDC between them.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="closing section-shell reveal">
-        <div class="closing-mark">
-          <img src="assets/vaultail-mark.png" alt="" />
-        </div>
-        <div class="closing-copy">
-          <span>THE MEME WITH A TAIL PLAN.</span>
-          <h2>Follow the meme.<br />Verify the machinery.</h2>
-          <p>VAULTAIL is currently a product and protocol blueprint—not a launched token.</p>
-        </div>
-        <a class="button button-primary" href="#top">Back to top <span>↑</span></a>
+        <a class="button primary" href="#top">Back to top <span>↑</span></a>
       </section>
     </main>
 
     <footer>
-      <div class="footer-main section-shell">
-        <a class="brand footer-brand" href="#top">
-          <img src="assets/vaultail-mark.png" alt="" />
-          <span>VAULTAIL</span>
-        </a>
-        <p>
-          An original concept for a Solana-native meme coin and transparent options treasury.
-        </p>
-        <div class="footer-links">
-          <a href="https://solana.com/docs/tokens" target="_blank" rel="noreferrer">Solana tokens ↗</a>
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <img src="assets/dickbutt-mark.png" alt="" />
+            <span>DICKBUTT</span>
+          </a>
+          <p>A Solana meme coin and options treasury concept.</p>
+        </div>
+
+        <div class="source-links">
+          <span>TECHNICAL SOURCES</span>
+          <a href="https://docs.derive.xyz/getting-started/depositing" target="_blank" rel="noreferrer">Derive deposits ↗</a>
+          <a href="https://docs.derive.xyz/authentication/session-keys" target="_blank" rel="noreferrer">Derive session keys ↗</a>
           <a href="https://developers.circle.com/cctp/concepts/supported-chains-and-domains" target="_blank" rel="noreferrer">Circle CCTP ↗</a>
-          <a href="https://docs.derive.xyz/getting-started/depositing" target="_blank" rel="noreferrer">Options infrastructure ↗</a>
-          <a href="https://docs.derive.xyz/authentication/session-keys" target="_blank" rel="noreferrer">Session keys ↗</a>
         </div>
       </div>
-      <div class="disclaimer section-shell">
+
+      <div class="shell disclosure">
         <strong>RISK DISCLOSURE</strong>
         <p>
-          $VTAIL is a proposed experimental and highly speculative crypto asset. Options trading may
-          result in partial or total loss of treasury capital. The system would also involve token,
-          liquidity, bridge, stablecoin, smart-contract, custody, execution, and operational risks.
-          Nothing here is financial, investment, legal, or tax advice. No return, distribution,
-          token-price increase, or preservation of capital is promised. Availability may be restricted
-          by jurisdiction.
+          $DICKBUTT is a proposed experimental and highly speculative crypto asset. Options trading
+          may result in partial or total loss of treasury capital. Token, liquidity, bridge,
+          stablecoin, smart contract, custody, execution, and operating risks remain. Nothing on
+          this site is financial, investment, legal, or tax advice. No return or increase in token
+          price is promised. Availability may be restricted by jurisdiction.
         </p>
-        <span>© <span data-year></span> VAULTAIL CONCEPT</span>
+        <span>© <span data-year></span> DICKBUTT CONCEPT</span>
       </div>
     </footer>
-
-    <dialog class="policy-dialog" data-policy-dialog>
-      <button class="dialog-close" type="button" data-close-policy aria-label="Close">×</button>
-      <span class="dialog-kicker">DRAFT POLICY · V0.1</span>
-      <h2>Start small. Stay bounded.</h2>
-      <div class="dialog-grid">
-        <div><span>ALLOWED</span><strong>Purchased options<br />Defined-risk spreads</strong></div>
-        <div><span>LOCKED</span><strong>Naked shorts<br />Treasury withdrawals</strong></div>
-        <div><span>ENFORCED</span><strong>Premium caps<br />Expiry + market limits</strong></div>
-        <div><span>CONTROLLED BY</span><strong>Treasury multisig<br />Emergency revocation</strong></div>
-      </div>
-      <p>This is an illustrative policy for the concept website, not a deployed or audited strategy.</p>
-    </dialog>
   </body>
 </html>

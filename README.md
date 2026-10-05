@@ -1,6 +1,6 @@
-# VAULTAIL concept site
+# DICKBUTT concept site
 
-Static presentation site for the VAULTAIL coin and treasury architecture concept.
+Static presentation site for the DICKBUTT coin and treasury architecture concept.
 
 ## Local preview
 
