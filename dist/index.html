@@ -6,15 +6,15 @@
     <meta name="theme-color" content="#0b0b0d" />
     <meta
       name="description"
-      content="GAMMA is a Solana meme coin concept that routes a configured creator fee share into a USDC treasury for options trading through Derive."
+      content="GAMMA is a Solana meme coin concept that routes a configured creator fee share into a USDC treasury for dated options trading on Paradex."
     />
-    <meta property="og:title" content="GAMMA: Solana fees, options on Derive" />
+    <meta property="og:title" content="GAMMA: Solana fees, options on Paradex" />
     <meta
       property="og:description"
-      content="A simple path from a Solana creator fee to an options treasury on Derive."
+      content="A simple path from a Solana creator fee to an options treasury on Paradex."
     />
     <meta property="og:image" content="https://dickbutt.danielotrooshi.chatgpt.site/assets/dickbutt-mark.png" />
-    <title>GAMMA: Solana fees, options on Derive</title>
+    <title>GAMMA: Solana fees, options on Paradex</title>
     <link rel="icon" type="image/png" href="assets/dickbutt-mark.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -34,12 +34,12 @@
           <h1>Creator fees.<br />Options trades.</h1>
           <p class="lead">
             GAMMA is planned for Solana. A configured share of creator fees would be collected
-            and converted to USDC when needed, moved to Ethereum with Circle CCTP, and used to
-            trade options through Derive.
+            and converted to USDC when needed, deposited from Solana into a Paradex treasury
+            account, and used to trade dated options.
           </p>
           <div class="hero-links">
             <a class="button" href="#how">See how it works</a>
-            <a class="text-link" href="https://www.derive.xyz/" target="_blank" rel="noreferrer">Visit Derive ↗</a>
+            <a class="text-link" href="https://www.paradex.trade/" target="_blank" rel="noreferrer">Visit Paradex ↗</a>
           </div>
         </div>
 
@@ -55,13 +55,13 @@
           </div>
           <i>↓</i>
           <div>
-            <span>CIRCLE CCTP</span>
-            <strong>Native USDC moves to Ethereum</strong>
+            <span>SUPPORTED BRIDGE</span>
+            <strong>USDC moves from Solana to Paradex</strong>
           </div>
           <i>↓</i>
           <div class="active">
-            <span>DERIVE</span>
-            <strong>USDC funds options trades</strong>
+            <span>PARADEX</span>
+            <strong>USDC funds dated options trades</strong>
           </div>
         </div>
       </section>
@@ -90,15 +90,15 @@
           <article>
             <span>03</span>
             <div>
-              <h3>Move native USDC</h3>
-              <p>Circle CCTP burns USDC on Solana and mints native USDC on Ethereum. No wrapped copy.</p>
+              <h3>Deposit into Paradex</h3>
+              <p>A Paradex-supported bridge moves USDC from Solana directly into the treasury’s Paradex account.</p>
             </div>
           </article>
           <article>
             <span>04</span>
             <div>
-              <h3>Trade through Derive</h3>
-              <p>The treasury deposits USDC into Derive and uses it as collateral for options trades.</p>
+              <h3>Trade dated options</h3>
+              <p>A Paradex subkey can place and manage trades, but cannot withdraw or transfer funds.</p>
             </div>
           </article>
         </div>
@@ -107,10 +107,11 @@
       <section class="tech shell" id="tech">
         <div class="tech-copy">
           <p class="kicker">UNDER THE HOOD</p>
-          <h2>Solana for the coin.<br />Derive for the options.</h2>
+          <h2>Solana for the coin.<br />Paradex for the options.</h2>
           <p>
-            The token stays on Solana. Only treasury USDC moves across chains. Derive matches the
-            trades and proves and settles the exchange on Ethereum.
+            The token stays on Solana. Only treasury USDC moves to Paradex. Its dated options are
+            cash-settled in USDC on Paradex Chain, a Starknet appchain whose state commitments and
+            ZK proofs settle to Ethereum L1.
           </p>
         </div>
 
@@ -118,17 +119,17 @@
           <div><dt>Coin</dt><dd>SPL token on Solana</dd></div>
           <div><dt>Fee source</dt><dd>Configured creator fee</dd></div>
           <div><dt>Treasury asset</dt><dd>USDC after conversion</dd></div>
-          <div><dt>Cross-chain route</dt><dd>Circle CCTP</dd></div>
-          <div><dt>Options venue</dt><dd>Derive</dd></div>
-          <div><dt>Treasury control</dt><dd>Multisig and trade-only key</dd></div>
+          <div><dt>Cross-chain route</dt><dd>Paradex-supported bridge</dd></div>
+          <div><dt>Options venue</dt><dd>Paradex</dd></div>
+          <div><dt>Trading access</dt><dd>Trade-only Paradex subkey</dd></div>
         </dl>
 
-        <aside class="derive-note">
-          <h3>Why Derive?</h3>
+        <aside class="venue-note">
+          <h3>Why Paradex?</h3>
           <p>
-            Derive provides the options account, collateral system, order matching, risk rules, and
-            Ethereum settlement. The trading key can be limited to trading only, with no withdrawal
-            scope. GAMMA is independent from and not affiliated with Derive.
+            Paradex supports direct USDC deposits from Solana through integrated bridge providers,
+            USDC-settled dated options, and programmatic trading with subkeys that cannot withdraw
+            or transfer funds. GAMMA is independent from and not affiliated with Paradex.
           </p>
         </aside>
       </section>
@@ -146,12 +147,13 @@
 
     <footer>
       <div class="shell footer-top">
-        <strong>Solana fees. Options on Derive.</strong>
+        <strong>Solana fees. Options on Paradex.</strong>
         <nav aria-label="Technical sources">
           <a href="https://solana.com/docs/tokens" target="_blank" rel="noreferrer">Solana tokens ↗</a>
-          <a href="https://developers.circle.com/cctp" target="_blank" rel="noreferrer">Circle CCTP ↗</a>
-          <a href="https://docs.derive.xyz/migrating/v3-improvements" target="_blank" rel="noreferrer">Derive architecture ↗</a>
-          <a href="https://docs.derive.xyz/authentication/access-scopes" target="_blank" rel="noreferrer">Derive access scopes ↗</a>
+          <a href="https://docs.paradex.trade/chain/paradex-chain-introduction" target="_blank" rel="noreferrer">Paradex Chain ↗</a>
+          <a href="https://docs.paradex.trade/docs/getting-started/bridges" target="_blank" rel="noreferrer">Paradex bridges ↗</a>
+          <a href="https://docs.paradex.trade/trading/dated-options/overview" target="_blank" rel="noreferrer">Paradex options ↗</a>
+          <a href="https://docs.paradex.trade/api/general-information/api-authentication" target="_blank" rel="noreferrer">Paradex subkeys ↗</a>
         </nav>
       </div>
       <div class="shell legal">

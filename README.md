@@ -3,7 +3,8 @@
 Minimal technical explainer for the proposed GAMMA coin and treasury flow.
 
 The concept launches the coin on Solana, collects a configured creator fee in USDC, moves native
-USDC to Ethereum through Circle CCTP, and uses it as collateral for options trading through Derive.
+USDC from Solana into a Paradex treasury account through a supported bridge, and uses it as
+collateral for USDC-settled dated options trading on Paradex.
 
 ## Local preview
 
