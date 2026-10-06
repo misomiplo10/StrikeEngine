@@ -1,6 +1,6 @@
-# DICKBUTT concept site
+# GAMMA concept site
 
-Minimal technical explainer for the proposed DICKBUTT coin and treasury flow.
+Minimal technical explainer for the proposed GAMMA coin and treasury flow.
 
 The concept launches the coin on Solana, collects a configured creator fee in USDC, moves native
 USDC to Ethereum through Circle CCTP, and uses it as collateral for options trading through Derive.
