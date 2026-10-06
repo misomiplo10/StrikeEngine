@@ -298,6 +298,82 @@ nav a:hover,
   background: #1b1212;
 }
 
+.strategy-copy {
+  display: grid;
+  gap: 28px;
+}
+
+.strategy-copy > p {
+  margin: 0;
+  color: #aaa6ae;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.market-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.market-list span {
+  padding: 16px 12px;
+  border: 1px solid #7e3e37;
+  border-radius: 9px;
+  color: #ff9b8a;
+  background: #1b1212;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.outcome-card {
+  padding: 22px;
+  border: 1px solid #303035;
+  border-radius: 12px;
+  background: #111114;
+}
+
+.outcome-card.accent {
+  border-color: #7e3e37;
+  background: #1b1212;
+}
+
+.outcome-card > span {
+  display: block;
+  margin-bottom: 14px;
+  color: #ff765f;
+  font-size: 0.61rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.outcome-card h3 {
+  margin: 0 0 9px;
+  font-size: 1rem;
+}
+
+.outcome-card p {
+  margin: 0;
+  color: #aaa6ae;
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+.strategy-copy .strategy-note {
+  padding-left: 18px;
+  border-left: 2px solid #ff765f;
+  color: #d1cdd4;
+}
+
 .source-links {
   margin-top: 24px;
   display: flex;
@@ -385,6 +461,10 @@ nav a {
   .docs-section > header {
     position: static;
   }
+
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
@@ -416,6 +496,10 @@ nav a {
 
   .system-card {
     padding: 14px;
+  }
+
+  .market-list {
+    grid-template-columns: 1fr 1fr;
   }
 
   .docs-hero {

@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0b0b0d" />
     <meta
       name="description"
-      content="How GAMMA turns Meteora trading fees into a protocol-owned options treasury and uses net realized trading profits for GAMMA buybacks."
+      content="How GAMMA uses all Meteora fees for 7-day BTC, SOL, HYPE and ZEC call spreads on Paradex, with net realized trading profits allocated to buybacks."
     />
     <title>Docs — GAMMA</title>
     <link rel="icon" type="image/png" href="../assets/dickbutt-mark.png" />
@@ -27,8 +27,9 @@
         <h1>How it works.</h1>
         <p class="lead">
           GAMMA is a Solana token connected to a protocol-owned options treasury. The mechanism
-          turns fees from trading on Meteora into capital for options positions on Paradex, then
-          directs all net realized trading profits to GAMMA buybacks.
+          puts all fees received from trading on Meteora into 7-day call spreads on BTC, SOL,
+          HYPE and ZEC through Paradex, then directs all net realized trading profits to GAMMA
+          buybacks.
         </p>
       </section>
 
@@ -55,8 +56,8 @@
             <div>
               <h3>Build the treasury</h3>
               <p>
-                Treasury fees remain protocol-owned and fund the treasury’s options positions on
-                Paradex.
+                All fees received by the protocol remain protocol-owned and are allocated to the
+                next 7-day trading cycle.
               </p>
             </div>
           </article>
@@ -64,10 +65,10 @@
           <article class="doc-step">
             <span>03</span>
             <div>
-              <h3>Take options positions</h3>
+              <h3>Open four call spreads</h3>
               <p>
-                The treasury uses its Paradex balance to take options positions under the
-                protocol’s trading strategy.
+                The treasury uses Paradex to open 7-day call spreads across BTC, SOL, HYPE and
+                ZEC. Each spread uses the same expiry for both option legs.
               </p>
             </div>
           </article>
@@ -82,6 +83,53 @@
               </p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="docs-section shell">
+        <header>
+          <p class="kicker">THE STRATEGY</p>
+          <h2>One defined-risk weekly trade.</h2>
+        </header>
+
+        <div class="strategy-copy">
+          <p>
+            For each market, the treasury buys a call at a lower strike and sells a call at a
+            higher strike. Both calls expire in 7 days. The sold call lowers the cost of the
+            position, while the bought call covers it. That creates a defined maximum loss and a
+            capped maximum profit.
+          </p>
+
+          <div class="market-list" aria-label="Markets traded by the strategy">
+            <span>BTC</span>
+            <span>SOL</span>
+            <span>HYPE</span>
+            <span>ZEC</span>
+          </div>
+
+          <div class="outcome-grid">
+            <article class="outcome-card">
+              <span>BELOW THE LOWER STRIKE</span>
+              <h3>Maximum loss</h3>
+              <p>The spread can expire worthless. The maximum loss is the net premium paid.</p>
+            </article>
+            <article class="outcome-card accent">
+              <span>BETWEEN THE STRIKES</span>
+              <h3>Value rises</h3>
+              <p>The spread gains value as the market moves above the lower strike.</p>
+            </article>
+            <article class="outcome-card">
+              <span>ABOVE THE UPPER STRIKE</span>
+              <h3>Maximum profit</h3>
+              <p>The upside is capped once the market reaches the higher strike.</p>
+            </article>
+          </div>
+
+          <p class="strategy-note">
+            All collected fees are put at risk in this strategy. If every spread expires
+            worthless, the fees allocated to that cycle can be lost. Buybacks happen only from
+            net realized trading profits.
+          </p>
         </div>
       </section>
 
@@ -109,8 +157,8 @@
           <article class="policy-card">
             <h3>Trading has risk</h3>
             <p>
-              Options positions can make or lose money. A buyback is not guaranteed and does not
-              guarantee any market outcome.
+              The strategy has defined risk, but it can still lose the entire net premium paid.
+              A buyback is not guaranteed and does not guarantee any market outcome.
             </p>
           </article>
           <article class="policy-card">
@@ -139,6 +187,7 @@
             <a href="https://www.meteora.ag/" target="_blank" rel="noreferrer">Visit Meteora</a>
             <a href="https://www.paradex.trade/" target="_blank" rel="noreferrer">Visit Paradex</a>
             <a href="https://docs.paradex.trade/trading/dated-options/overview" target="_blank" rel="noreferrer">Paradex options docs</a>
+            <a href="https://docs.paradex.trade/trading/dated-options/margin-requirements" target="_blank" rel="noreferrer">Paradex spread risk docs</a>
           </div>
         </div>
       </section>
@@ -146,7 +195,7 @@
 
     <footer>
       <div class="shell footer-top">
-        <strong>Meteora fees. Paradex options. GAMMA buybacks.</strong>
+        <strong>Meteora fees. 7-day call spreads. GAMMA buybacks.</strong>
         <nav aria-label="Site links">
           <a href="../">Home</a>
           <a href="https://www.meteora.ag/" target="_blank" rel="noreferrer">Meteora</a>
