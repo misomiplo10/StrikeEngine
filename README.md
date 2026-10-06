@@ -1,6 +1,9 @@
 # DICKBUTT concept site
 
-Static presentation site for the DICKBUTT coin and treasury architecture concept.
+Minimal technical explainer for the proposed DICKBUTT coin and treasury flow.
+
+The concept launches the coin on Solana, collects a configured creator fee in USDC, moves native
+USDC to Ethereum through Circle CCTP, and uses it as collateral for options trading through Derive.
 
 ## Local preview
 

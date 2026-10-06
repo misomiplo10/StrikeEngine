@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a090d" />
+    <meta name="theme-color" content="#0b0b0d" />
     <meta
       name="description"
-      content="DICKBUTT is a Solana meme coin concept whose pool fees fund a transparent options treasury that trades through Derive."
+      content="DICKBUTT is a Solana meme coin concept that routes a configured creator fee share into a USDC treasury for options trading through Derive."
     />
     <meta property="og:title" content="DICKBUTT: Solana fees, options on Derive" />
     <meta
       property="og:description"
-      content="A simple, transparent path from Solana pool fees to defined risk options trades on Derive."
+      content="A simple path from a Solana creator fee to an options treasury on Derive."
     />
-    <meta property="og:image" content="assets/dickbutt-mark.png" />
+    <meta property="og:image" content="https://dickbutt.danielotrooshi.chatgpt.site/assets/dickbutt-mark.png" />
     <title>DICKBUTT: Solana fees, options on Derive</title>
     <link rel="icon" type="image/png" href="assets/dickbutt-mark.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -25,207 +24,142 @@
         <img src="assets/dickbutt-mark.png" alt="" />
         <span>DICKBUTT</span>
       </a>
-
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span>
-        <span class="sr-only">Open navigation</span>
-      </button>
-
-      <nav id="main-nav" aria-label="Primary navigation">
-        <a href="#how">How it works</a>
-        <a href="#derive">Why Derive</a>
-        <a href="#risk">Risk</a>
-      </nav>
-
-      <a class="small-cta" href="#how">See the flow <span>↓</span></a>
+      <span class="network">LAUNCHING ON SOLANA</span>
     </header>
 
     <main id="top">
       <section class="hero shell">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> SOLANA COIN. DERIVE TREASURY.</div>
-          <h1>Memes trade.<br /><em>Fees go to work.</em></h1>
-          <p>
-            DICKBUTT is a Solana meme coin concept. A share of eligible pool fees is collected in
-            USDC and used by a transparent treasury to make options trades through Derive.
+        <div class="hero-copy">
+          <p class="kicker">PLANNED SOLANA MECHANISM</p>
+          <h1>Creator fees.<br />Options trades.</h1>
+          <p class="lead">
+            DICKBUTT is planned for Solana. A configured share of creator fees would be collected
+            and converted to USDC when needed, moved to Ethereum with Circle CCTP, and used to
+            trade options through Derive.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#how">How it works <span>↓</span></a>
-            <a class="button secondary" href="https://www.derive.xyz/" target="_blank" rel="noreferrer">Visit Derive <span>↗</span></a>
-          </div>
-          <small>Concept only. No guaranteed returns. Options and crypto can lose value.</small>
-        </div>
-
-        <div class="hero-card reveal" aria-label="DICKBUTT fee flow overview">
-          <div class="mark-wrap">
-            <img src="assets/dickbutt-mark.png" alt="DICKBUTT geometric logo" />
-          </div>
-          <div class="mini-flow">
-            <div><span>01</span><strong>Trade on Solana</strong></div>
-            <i>↓</i>
-            <div><span>02</span><strong>Collect USDC fees</strong></div>
-            <i>↓</i>
-            <div class="highlight"><span>03</span><strong>Trade options on Derive</strong></div>
+          <div class="hero-links">
+            <a class="button" href="#how">See how it works</a>
+            <a class="text-link" href="https://www.derive.xyz/" target="_blank" rel="noreferrer">Visit Derive ↗</a>
           </div>
         </div>
-      </section>
 
-      <section class="stack-bar" aria-label="Technology stack">
-        <div class="shell stack-inner">
-          <span>BUILT ACROSS</span>
-          <strong>Solana</strong><i>→</i><strong>Circle CCTP</strong><i>→</i><strong>Ethereum</strong><i>→</i><strong>Derive</strong>
+        <div class="system-card" aria-label="Treasury flow">
+          <div>
+            <span>SOLANA</span>
+            <strong>Coin trades</strong>
+          </div>
+          <i>↓</i>
+          <div>
+            <span>TREASURY</span>
+            <strong>Creator fees become USDC</strong>
+          </div>
+          <i>↓</i>
+          <div>
+            <span>CIRCLE CCTP</span>
+            <strong>Native USDC moves to Ethereum</strong>
+          </div>
+          <i>↓</i>
+          <div class="active">
+            <span>DERIVE</span>
+            <strong>USDC funds options trades</strong>
+          </div>
         </div>
       </section>
 
       <section class="how shell" id="how">
-        <div class="section-intro reveal">
-          <span>HOW IT WORKS</span>
-          <h2>One fee path.<br />Four clear steps.</h2>
-          <p>The token stays on Solana. The options treasury trades through Derive.</p>
+        <div class="section-heading">
+          <p class="kicker">HOW IT WORKS</p>
+          <h2>Four steps.</h2>
         </div>
 
         <div class="steps">
-          <article class="step reveal">
-            <span class="step-no">01</span>
-            <div class="step-icon solana-icon">S</div>
-            <h3>DICKBUTT trades on Solana</h3>
-            <p>A standard SPL token trades in a pool paired with USDC.</p>
-          </article>
-
-          <article class="step reveal">
-            <span class="step-no">02</span>
-            <div class="step-icon">%</div>
-            <h3>The treasury collects fees</h3>
-            <p>Eligible creator or treasury liquidity fees accrue in USDC. Normal wallet transfers are not taxed.</p>
-          </article>
-
-          <article class="step reveal">
-            <span class="step-no">03</span>
-            <div class="step-icon">⇄</div>
-            <h3>USDC moves to Ethereum</h3>
-            <p>Circle CCTP moves native USDC from Solana to the project treasury on Ethereum.</p>
-          </article>
-
-          <article class="step reveal">
-            <span class="step-no">04</span>
-            <div class="step-icon derive-icon">D</div>
-            <h3>Options trade through Derive</h3>
-            <p>The treasury funds a Derive subaccount. A restricted bot places approved options trades.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="derive-section shell" id="derive">
-        <div class="derive-copy reveal">
-          <div class="derive-label"><span>D</span> OPTIONS EXECUTION: DERIVE</div>
-          <h2>Derive is the trading venue.</h2>
-          <p>
-            DICKBUTT is not Derive and is not affiliated with it. The proposed treasury uses Derive
-            as the infrastructure for its options account, collateral, orders, and positions.
-          </p>
-          <p>
-            The treasury owner keeps control. A separate session key gives the bot permission to
-            trade, but not permission to withdraw or transfer treasury funds.
-          </p>
-          <a href="https://docs.derive.xyz/authentication/contract-owned-accounts" target="_blank" rel="noreferrer">Read Derive account documentation <span>↗</span></a>
-        </div>
-
-        <div class="account-card reveal">
-          <div class="account-head">
-            <span>TREASURY ACCOUNT</span>
-            <i>PROPOSED</i>
-          </div>
-          <div class="account-row">
-            <span>Owner</span><strong>Project multisig</strong>
-          </div>
-          <div class="account-row">
-            <span>Options venue</span><strong>Derive</strong>
-          </div>
-          <div class="account-row">
-            <span>Trading bot</span><strong class="allowed">Trade only</strong>
-          </div>
-          <div class="account-row">
-            <span>Withdrawals</span><strong class="blocked">Blocked for bot</strong>
-          </div>
-          <div class="account-row">
-            <span>Initial strategy</span><strong>Defined risk</strong>
-          </div>
-          <div class="account-note">The multisig can revoke the bot session key at any time.</div>
-        </div>
-      </section>
-
-      <section class="risk shell" id="risk">
-        <div class="section-intro reveal">
-          <span>KEEP IT BOUNDED</span>
-          <h2>Simple rules for a risky idea.</h2>
-        </div>
-
-        <div class="rules">
-          <article class="rule reveal">
+          <article>
             <span>01</span>
-            <h3>Defined risk first</h3>
-            <p>Start with purchased options and capped loss spreads. No naked short options.</p>
+            <div>
+              <h3>Launch on Solana</h3>
+              <p>The coin would launch as an SPL token and trade in a Solana liquidity pool paired with USDC.</p>
+            </div>
           </article>
-          <article class="rule reveal">
+          <article>
             <span>02</span>
-            <h3>The bot cannot withdraw</h3>
-            <p>Trading permissions stay separate from treasury ownership and administration.</p>
+            <div>
+              <h3>Collect and convert the fee</h3>
+              <p>A configured share from eligible pool trades would be collected and converted to USDC when needed.</p>
+            </div>
           </article>
-          <article class="rule reveal">
+          <article>
             <span>03</span>
-            <h3>Show the transactions</h3>
-            <p>Publish fee collection, CCTP transfers, Derive deposits, positions, and results after launch.</p>
+            <div>
+              <h3>Move native USDC</h3>
+              <p>Circle CCTP burns USDC on Solana and mints native USDC on Ethereum. No wrapped copy.</p>
+            </div>
           </article>
-        </div>
-
-        <div class="plain-truth reveal">
-          <strong>Plain truth</strong>
-          <p>
-            Holding $DICKBUTT does not guarantee income, a distribution, a redemption right, or
-            ownership of treasury assets. The treasury can lose money.
-          </p>
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Trade through Derive</h3>
+              <p>The treasury deposits USDC into Derive and uses it as collateral for options trades.</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="closing shell reveal">
-        <img src="assets/dickbutt-mark.png" alt="" />
-        <div>
-          <span>DICKBUTT</span>
-          <h2>A Solana meme.<br />An options treasury on Derive.</h2>
-          <p>This is a product concept, not a launched token or live trading strategy.</p>
+      <section class="tech shell" id="tech">
+        <div class="tech-copy">
+          <p class="kicker">UNDER THE HOOD</p>
+          <h2>Solana for the coin.<br />Derive for the options.</h2>
+          <p>
+            The token stays on Solana. Only treasury USDC moves across chains. Derive matches the
+            trades and proves and settles the exchange on Ethereum.
+          </p>
         </div>
-        <a class="button primary" href="#top">Back to top <span>↑</span></a>
+
+        <dl class="tech-list">
+          <div><dt>Coin</dt><dd>SPL token on Solana</dd></div>
+          <div><dt>Fee source</dt><dd>Configured creator fee</dd></div>
+          <div><dt>Treasury asset</dt><dd>USDC after conversion</dd></div>
+          <div><dt>Cross-chain route</dt><dd>Circle CCTP</dd></div>
+          <div><dt>Options venue</dt><dd>Derive</dd></div>
+          <div><dt>Treasury control</dt><dd>Multisig and trade-only key</dd></div>
+        </dl>
+
+        <aside class="derive-note">
+          <h3>Why Derive?</h3>
+          <p>
+            Derive provides the options account, collateral system, order matching, risk rules, and
+            Ethereum settlement. The trading key can be limited to trading only, with no withdrawal
+            scope. DICKBUTT is independent from and not affiliated with Derive.
+          </p>
+        </aside>
+      </section>
+
+      <section class="important shell">
+        <p class="kicker">IMPORTANT</p>
+        <h2>This is a mechanism, not a promise.</h2>
+        <p>
+          The final contracts, fee settings, wallet controls, and trading rules still need to be
+          implemented and disclosed. Holding DICKBUTT does not guarantee income, returns, ownership
+          of treasury assets, or distributions. The treasury can lose money.
+        </p>
       </section>
     </main>
 
     <footer>
-      <div class="shell footer-grid">
-        <div>
-          <a class="brand" href="#top">
-            <img src="assets/dickbutt-mark.png" alt="" />
-            <span>DICKBUTT</span>
-          </a>
-          <p>A Solana meme coin and options treasury concept.</p>
-        </div>
-
-        <div class="source-links">
-          <span>TECHNICAL SOURCES</span>
-          <a href="https://docs.derive.xyz/getting-started/depositing" target="_blank" rel="noreferrer">Derive deposits ↗</a>
-          <a href="https://docs.derive.xyz/authentication/session-keys" target="_blank" rel="noreferrer">Derive session keys ↗</a>
-          <a href="https://developers.circle.com/cctp/concepts/supported-chains-and-domains" target="_blank" rel="noreferrer">Circle CCTP ↗</a>
-        </div>
+      <div class="shell footer-top">
+        <strong>Solana fees. Options on Derive.</strong>
+        <nav aria-label="Technical sources">
+          <a href="https://solana.com/docs/tokens" target="_blank" rel="noreferrer">Solana tokens ↗</a>
+          <a href="https://developers.circle.com/cctp" target="_blank" rel="noreferrer">Circle CCTP ↗</a>
+          <a href="https://docs.derive.xyz/migrating/v3-improvements" target="_blank" rel="noreferrer">Derive architecture ↗</a>
+          <a href="https://docs.derive.xyz/authentication/access-scopes" target="_blank" rel="noreferrer">Derive access scopes ↗</a>
+        </nav>
       </div>
-
-      <div class="shell disclosure">
-        <strong>RISK DISCLOSURE</strong>
+      <div class="shell legal">
         <p>
-          $DICKBUTT is a proposed experimental and highly speculative crypto asset. Options trading
-          may result in partial or total loss of treasury capital. Token, liquidity, bridge,
-          stablecoin, smart contract, custody, execution, and operating risks remain. Nothing on
-          this site is financial, investment, legal, or tax advice. No return or increase in token
-          price is promised. Availability may be restricted by jurisdiction.
+          Experimental concept only. Crypto, bridging, stablecoins, smart contracts, and options
+          trading involve substantial risk. Nothing here is financial, legal, or tax advice.
         </p>
-        <span>© <span data-year></span> DICKBUTT CONCEPT</span>
+        <span>© 2026 DICKBUTT</span>
       </div>
     </footer>
   </body>
