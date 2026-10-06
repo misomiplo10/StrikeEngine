@@ -17,8 +17,24 @@
     <title>Strike Engine — Fees. Options. Buybacks.</title>
     <link rel="icon" type="image/png" href="assets/strike-engine-pixel-mark-transparent.png" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .ca-bar{border-bottom:2px solid #35445f;background:#15223b;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;color:#f5f2ec}
+      .ca-label{font-family:Silkscreen,monospace;font-size:14px;color:#f6e963;white-space:nowrap}
+      .ca-address{font-family:monospace;font-size:14px;overflow-wrap:anywhere;min-width:0;line-height:1.6}
+      .ca-copy{border:1px solid #f6e963;background:#f6e963;color:#17191f;padding:8px 12px;font-family:Silkscreen,monospace;font-size:12px;cursor:pointer;min-height:36px}
+      .ca-copy:focus-visible{outline:2px solid white;outline-offset:3px}
+      .ca-status{font-size:13px;color:#f6e963}
+      .ca-status:empty{display:none}
+      @media(max-width:600px){.ca-bar{padding:12px 14px;gap:8px 12px;justify-content:flex-start}.ca-address{flex-basis:100%;order:3}.ca-status{order:4}}
+    </style>
   </head>
   <body>
+    <div class="ca-bar" role="region" aria-label="Solana token contract address">
+      <span class="ca-label">SOLANA CA</span>
+      <code class="ca-address" id="token-ca">8SV1Q1A6gDsW2A3ZTx2sjychpT8ttvusdYkYoTWsTnPt</code>
+      <button class="ca-copy" id="copy-ca" type="button" aria-label="Copy Solana contract address">Copy CA</button>
+      <span class="ca-status" id="ca-status" role="status" aria-live="polite"></span>
+    </div>
     <header class="site-header">
       <a class="brand" href="./" aria-label="Strike Engine home">
         <img src="assets/strike-engine-pixel-mark-transparent.png" alt="" />
@@ -81,5 +97,22 @@
         <span>© 2026 Strike Engine</span>
       </div>
     </footer>
+    <script>
+      document.getElementById('copy-ca').addEventListener('click', async function () {
+        const address = document.getElementById('token-ca');
+        const status = document.getElementById('ca-status');
+        try {
+          await navigator.clipboard.writeText(address.textContent.trim());
+          status.textContent = 'Copied';
+        } catch {
+          const range = document.createRange();
+          range.selectNodeContents(address);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          status.textContent = 'Address selected. Copy it manually.';
+        }
+      });
+    </script>
   </body>
 </html>
