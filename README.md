@@ -1,15 +1,15 @@
-# GAMMA concept site
+# GAMMA site
 
-Minimal technical explainer for the proposed GAMMA coin and treasury flow.
+Minimal English-language website explaining GAMMA’s treasury mechanism.
 
-The concept launches the coin on Solana, collects a configured creator fee in USDC, moves native
-USDC from Solana into a Paradex treasury account through a supported bridge, and uses it as
-collateral for USDC-settled dated options trading on Paradex.
+GAMMA launches and trades on Meteora. Fees received by the protocol treasury fund options
+positions on Paradex. All net realized trading profits are allocated to GAMMA market buybacks.
+
+## Pages
+
+- `/` — concise landing page
+- `/docs/` — mechanism, treasury policy and risk explanation
 
 ## Local preview
 
 Serve the `dist` directory with any static file server.
-
-## Project status
-
-This is a concept presentation. It does not represent a launched token, a live treasury, or audited financial infrastructure.
